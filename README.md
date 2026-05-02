@@ -12,9 +12,16 @@
       <p>
         This hub connects high-level AI theory with ground-level hardware implementation. Every breakthrough—from <b>CAN Bus logic</b> to <b>micro-expressions</b>—is a component of a larger architectural puzzle.
       </p>
-      <blockquote>
-        <b>Current Activity:</b> Integrating <b>Magnetic Encoders</b>. This phase implements <b>proprioceptive feedback</b>, allowing the Brain to validate physical displacement against commanded movement for precise motor control.
-      </blockquote>
+<blockquote style="font-size: 0.85rem; line-height: 1.4; margin: 10px 0;">
+    <b>Current Activity:</b> Integrating <b>Magnetic Encoders</b> to implement <b>proprioceptive feedback. This allows the Brain to validate physical displacement against commanded movement for precise motor control.
+      </p>
+    <p style="margin-top: 8px;">
+        Integrating MT6701 and AS5600 encoders marks the shift to a <b>closed-loop system</b>. By coupling sensing magnets to motor shafts, the Brain receives real-time data to ensure physical movement matches digital intent, overcoming I2C conflicts via dual-sensor tracking. 
+    </p>
+    <p style="margin-top: 8px;">
+        This provides "proprioceptive awareness," allowing the <b>Digital Nervous System</b> to detect and correct for stalls or resistance via CAN Bus nodes. This validation layer enables micro-adjustments, bridging theoretical modeling with functional humanoid movement.
+    </p>
+</blockquote>
     </td>
     <td width="35%" align="center" valign="top">
       <div style="border: 1px solid #eaecef; border-radius: 8px; padding: 15px; background: #fff;">
@@ -45,7 +52,7 @@ This section serves as the dynamic bridge between high-level strategy and techni
 * 📂 <a href="https://github.com/MatsRobot/Digital-Nervous-System/blob/main/Experiments/Stage4-%20Adding%20Practical%20Nodes%20to%20CAN%20Bus/CAN_Bus_Arduino_Nano/CAN_Bus_Nano_Encoders_Display_bb.jpg" target="_blank">Technical Schematic: CAN_Bus_Nano_Encoders_Display</a>
 ---
 
-<img width="1380" height="752" alt="Image1" src="https://github.com/user-attachments/assets/b4c1fcd9-3fe6-45e9-8ae1-04eb9e18c6ae" />
+<img width="1380" height="752" alt="Robot_Workshop" src="https://github.com/user-attachments/assets/d61aee20-84b7-4f63-8b86-fdf65eaaaa7e" />
 
 ---
 
