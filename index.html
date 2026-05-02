@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="https://matsrobot.github.io/Favicon-192.png" sizes="192x192">
+    
+    <title>MatsRobot | Project Roadmap & Weekly Log</title>
+    
+    <style>
+        :root {
+            --gh-green: #238636;
+            --gh-green-hover: #2ea44f;
+            --gh-amber: #d4a017;
+            --gh-red: #cf222e;
+            --gh-dark: #24292e;
+            --gh-blue: #0366d6;
+            --gh-border: #eaecef;
+            --gh-bg-gray: #f6f8fa;
+            --note-bg: #fffbdd;
+            --note-border: #d4a017;
+        }
+
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; 
+            line-height: 1.6; 
+            color: var(--gh-dark); 
+            max-width: 1000px; 
+            margin: 0 auto; 
+            padding: 2rem; 
+        }
+
+        /* Hero Section Styling */
+        .hero-section { display: flex; gap: 2.5rem; margin-bottom: 1.5rem; align-items: flex-start; }
+        .hero-text { flex: 3; }
+        .image-sidebar { 
+            flex: 1.5; 
+            border: 1px solid var(--gh-border);
+            border-radius: 8px;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        .note { 
+            background-color: var(--note-bg); 
+            padding: 1.25rem; 
+            border-left: 5px solid var(--note-border); 
+            margin: 1.5rem 0; 
+            border-radius: 4px;
+        }
+
+        /* Weekly Update Section */
+        .weekly-activity-log {
+            margin: 2.5rem 0;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: #fff;
+            border: 1px solid var(--gh-border);
+        }
+
+        /* Traffic Light Status Markers */
+        .status-pill {
+            font-size: 0.7rem;
+            padding: 2px 8px;
+            border-radius: 12px;
+            color: white;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-right: 10px;
+            display: inline-block;
+            min-width: 80px;
+            text-align: center;
+        }
+        .complete { background-color: var(--gh-green); }
+        .current { background-color: var(--gh-amber); }
+        .future { background-color: var(--gh-red); }
+
+        .btn-download { 
+            background-color: var(--gh-green); 
+            color: white; 
+            padding: 12px 28px; 
+            text-decoration: none; 
+            border-radius: 6px; 
+            display: inline-flex; 
+            align-items: center; 
+            gap: 18px; 
+            font-weight: 600;
+            border: 1px solid rgba(27, 31, 35, 0.15);
+            margin-bottom: 1rem;
+        }
+        .btn-download:hover { background-color: var(--gh-green-hover); }
+
+        .btn-link {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 8px 16px;
+            background: var(--gh-bg-gray);
+            border: 1px solid var(--gh-border);
+            border-radius: 6px;
+            text-decoration: none;
+            color: var(--gh-blue);
+            font-weight: 500;
+            font-size: 0.9rem;
+        }
+
+        h1 { font-size: 1.8rem; margin-top: 0; }
+        h2 { color: var(--gh-blue); border-bottom: 1px solid var(--gh-border); padding-bottom: 0.3em; margin-top: 3rem; display: flex; align-items: center; gap: 10px; }
+        h3 { font-size: 1.1rem; margin-top: 1.5rem; background: var(--gh-bg-gray); padding: 8px 12px; border-radius: 4px; }
+
+        .toc-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px 40px; margin-top: 15px; }
+        .toc-item { border-bottom: 1px solid #f0f0f0; padding: 6px 0; display: flex; justify-content: space-between; align-items: center; }
+        .page-num { color: #888; font-size: 0.85rem; font-family: monospace; }
+
+        footer { margin-top: 4rem; padding: 2rem 0; border-top: 1px solid var(--gh-border); text-align: center; color: #6a737d; font-size: 0.9rem; }
+
+        @media (max-width: 850px) {
+            .hero-section { flex-direction: column; }
+            .toc-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- SECTION 1: STRATEGIC EXECUTION -->
+    <div class="hero-section">
+        <div class="hero-text">
+            <h1>🚀 The Humanoid Robot Blueprint:</h1>
+            <p><strong>Project Humanoid Robot</strong> is the central execution hub for the MatsRobot initiative. This architecture maps the transition from pages of technical theory into a functional, integrated humanoid system by bridging the "Missing Links" between isolated robotics modules.</p>
+            
+		<!-- SECTION 1: Updated Note -->
+		<div class="note">
+			<strong>Current Activity:</strong> Integrating <strong>MT6701 and AS5600 Magnetic Encoders</strong>. 
+			<p></p>
+			This phase focuses on establishing <strong>closed-loop feedback</strong>. By providing precise data on physical displacement, the Brain can now verify if the robot has accurately executed movement commands sent by the main processor.
+		</div>
+
+            <a href="https://github.com/MatsRobot" class="btn-download">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.604-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12c0-5.523-4.477-10-10-10z"/></svg>
+                <span style="margin-left: 10px;">The Humanoid Robot Blueprint Repositories</span>
+            </a>
+        </div>
+
+        <div class="image-sidebar">
+            <h3>Mission Status</h3>
+            <div style="margin-top: 15px; font-size: 0.9rem;">
+                <p><span class="status-pill complete">Phase 1</span> Reflexes & Power</p>
+                <p><span class="status-pill current">Phase 2</span> Nervous System</p>
+                <p><span class="status-pill future">Phase 3</span> Cognitive Logic</p>
+                <p><span class="status-pill future">Phase 4</span> Full Integration</p>
+            </div>
+            <hr style="border: 0; border-top: 1px solid var(--gh-border); margin: 15px 0;">
+            <p style="font-size: 0.75rem; color: #6a737d;">Reference: Master Tech Specification Document</p>
+        </div>
+    </div>
+
+	<!-- SECTION 2: Updated Weekly Log -->
+	<div class="weekly-activity-log">
+		<h2>⚡ Weekly Log</h2>
+		<span class="status-pill current">Active Task</span>
+		<h3 style="display:inline; background:none; padding:0; margin:0;">Magnetic Encoder Integration (MT6701 & AS5600)</h3>
+		
+		<p style="margin-top: 1.5rem;">
+			Building on previous logic for reading angular rotation and transmitting data via the CAN Bus, this task addresses the <strong>physical hardware integration</strong>. We are developing the mechanical link between the Base Unit motors and the sensing magnets to ensure reliable data acquisition.
+		</p>
+		<p>
+			To bypass I2C address conflicts on the shared bus, we utilized two distinct encoders (MT6701 and AS5600). I designed and 3D-printed a custom housing that couples the dual DC motors directly to these encoders, ensuring high-precision tracking within the Base Unit assembly.
+		</p>        
+		
+		<div style="display: flex; gap: 12px; margin-top: 10px;">
+			<a href="https://github.com/MatsRobot/Digital-Nervous-System/tree/main/Experiments/Stage4-%20Adding%20Practical%20Nodes%20to%20CAN%20Bus/CAN_Bus_Arduino_Nano" 
+			   class="btn-link" 
+			   target="_blank" 
+			   rel="noopener noreferrer">
+			   🔗 Repository Page: CAN_Bus_Arduino_Nano
+			</a>
+			<a href="https://github.com/MatsRobot/Digital-Nervous-System/blob/main/Experiments/Stage4-%20Adding%20Practical%20Nodes%20to%20CAN%20Bus/CAN_Bus_Arduino_Nano/CAN_Bus_Nano_Encoders_Display_bb.jpg" 
+			   class="btn-link" 
+			   target="_blank" 
+			   rel="noopener noreferrer">
+			   📂 Technical Schematic: CAN_Bus_Nano_Encoders_Display
+			</a>
+		</div>
+    </div>
+
+    <!-- SECTION 3: MASTER TASK LEDGER -->
+    <h2>📋 Master Task Ledger</h2>
+    <p>Detailed trajectory of the project based on the master technical documentation.</p>
+
+    <h3>🧠 Theoretical & AI Foundations</h3>
+    <div class="toc-grid">
+        <div class="toc-item"><span><span class="status-pill complete">Complete</span>Neural Network Basics</span> <span class="page-num">p.5</span></div>
+        <div class="toc-item"><span><span class="status-pill complete">Complete</span>Linear Algebra & Tensors</span> <span class="page-num">p.5</span></div>
+        <div class="toc-item"><span><span class="status-pill complete">Complete</span>Calculus & Integration</span> <span class="page-num">p.6</span></div>
+        <div class="toc-item"><span><span class="status-pill current">Current</span>Algorithmic Modelling</span> <span class="page-num">p.6</span></div>
+        <div class="toc-item"><span><span class="status-pill future">Future</span>Full AI Maths</span> <span class="page-num">p.6</span></div>
+    </div>
+
+    <h3>💻 Dev Environment & AI Debugging</h3>
+    <div class="toc-grid">
+        <div class="toc-item"><span><span class="status-pill complete">Complete</span>Hardware Awareness Logic</span> <span class="page-num">p.7</span></div>
+        <div class="toc-item"><span><span class="status-pill complete">Complete</span>Iterative Error Analysis</span> <span class="page-num">p.7</span></div>
+        <div class="toc-item"><span><span class="status-pill complete">Complete</span>Python Env & VS Code</span> <span class="page-num">p.9</span></div>
+        <div class="toc-item"><span><span class="status-pill complete">Complete</span>Python OOP (POOP)</span> <span class="page-num">p.11</span></div>
+        <div class="toc-item"><span><span class="status-pill current">Current</span>OpenCV & NumPy Integration</span> <span class="page-num">p.11</span></div>
+    </div>
+
+    <h3>📡 Processor & Sensor Communication</h3>
+    <div class="toc-grid">
+        <div class="toc-item"><span><span class="status-pill complete">Complete</span>UART/I2C/SPI Protocols</span> <span class="page-num">p.31</span></div>
+        <div class="toc-item"><span><span class="status-pill complete">Complete</span>Open-Drain Architecture</span> <span class="page-num">p.33</span></div>
+        <div class="toc-item"><span><span class="status-pill current">Current</span>Lidar Build Parameters</span> <span class="page-num">p.38</span></div>
+        <div class="toc-item"><span><span class="status-pill current">Current</span>I2C Processor Handshaking</span> <span class="page-num">p.40</span></div>
+    </div>
+
+    <h3>🏗️ Hardware Design & Physical Integration</h3>
+    <div class="toc-grid">
+        <div class="toc-item"><span><span class="status-pill complete">Complete</span>Pico Base Unit UART</span> <span class="page-num">p.49</span></div>
+        <div class="toc-item"><span><span class="status-pill complete">Complete</span>Robot Eyes & Mouth Lights</span> <span class="page-num">p.77</span></div>
+        <div class="toc-item"><span><span class="status-pill current">Current</span>MoveHead ESP32_CAM</span> <span class="page-num">p.87</span></div>
+        <div class="toc-item"><span><span class="status-pill current">Current</span>Servo Position Feedback</span> <span class="page-num">p.96</span></div>
+        <div class="toc-item"><span><span class="status-pill future">Future</span>Moving Waist Assembly</span> <span class="page-num">p.108</span></div>
+        <div class="toc-item"><span><span class="status-pill future">Future</span>Stereo Vision & Encoders</span> <span class="page-num">p.124</span></div>
+    </div>
+
+    <footer>
+        <p>© 2026 MatsRobot | Part of the Open Source Robotics Initiative</p>
+    </footer>
+
+</body>
+</html>
