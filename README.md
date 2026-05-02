@@ -6,37 +6,38 @@
 ---
 
 <table width="100%">
+  <!-- ROW 1: MISSION STATUS (Now at the top for mobile/desktop clarity) -->
   <tr>
-    <td width="65%" align="left" valign="top">
+    <td align="center" bgcolor="#f8f9fa">
+      <div style="padding: 15px;">
+        <h3>Mission Status</h3>
+        <img width="450" alt="Gemini_Generated_Image_v86lvsv86lvsv86l" src="https://github.com/user-attachments/assets/b97be2ff-ea97-429b-aa82-4668e3df16dc" />
+        <br><br>
+        <img src="https://img.shields.io/badge/PHASE_1-COMPLETE-238636?style=for-the-badge" alt="Phase 1 Complete" /> 
+        <img src="https://img.shields.io/badge/PHASE_2-CURRENT-d4a017?style=for-the-badge" alt="Phase 2 Current" /> 
+        <img src="https://img.shields.io/badge/PHASE_3-FUTURE-cf222e?style=for-the-badge" alt="Phase 3 Future" />
+        <p><small>Ref: Master Tech Specification Document</small></p>
+      </div>
+    </td>
+  </tr>
+  <!-- ROW 2: STRATEGIC EXECUTION -->
+  <tr>
+    <td align="left" valign="top">
       <h2>🚀 Strategic Execution</h2>
       <p>
         This hub connects high-level AI theory with ground-level hardware implementation. Every breakthrough—from <b>CAN Bus logic</b> to <b>micro-expressions</b>—is a component of a larger architectural puzzle.
       </p>
-<blockquote style="font-size: 0.85rem; line-height: 1.4; margin: 10px 0;">
-    <b>Current Activity:</b> Integrating <b>Magnetic Encoders</b> to implement <b>proprioceptive feedback. This allows the Brain to validate physical displacement against commanded movement for precise motor control.
-      </p>
-    <p style="margin-top: 8px;">
-        Integrating MT6701 and AS5600 encoders marks the shift to a <b>closed-loop system</b>. By coupling sensing magnets to motor shafts, the Brain receives real-time data to ensure physical movement matches digital intent, overcoming I2C conflicts via dual-sensor tracking. 
-    </p>
-    <p style="margin-top: 8px;">
-        This provides "proprioceptive awareness," allowing the <b>Digital Nervous System</b> to detect and correct for stalls or resistance via CAN Bus nodes. This validation layer enables micro-adjustments, bridging theoretical modeling with functional humanoid movement.
-    </p>
-</blockquote>
-    </td>
-    <td width="35%" align="center" valign="top">
-      <div style="border: 1px solid #eaecef; border-radius: 8px; padding: 15px; background: #fff;">
-        <h3>Mission Status</h3>
-        <img width="300" alt="Gemini_Generated_Image_v86lvsv86lvsv86l" src="https://github.com/user-attachments/assets/b97be2ff-ea97-429b-aa82-4668e3df16dc" />
-        <p align="left"> <img src="https://img.shields.io/badge/PHASE_1-COMPLETE-238636?style=for-the-badge" alt="Phase 1 Complete" /> </p>
-        <p align="left"> <img src="https://img.shields.io/badge/PHASE_2-CURRENT-d4a017?style=for-the-badge" alt="Phase 2 Current" /> </p>
-        <p align="left"> <img src="https://img.shields.io/badge/PHASE_3-FUTURE-cf222e?style=for-the-badge" alt="Phase 3 Future" />   </p>
-        <hr>
-        <p align="left"><small>Ref: Master Tech Specification Document</small></p>
-      </div>
+      <blockquote style="font-size: 0.85rem; line-height: 1.4; margin: 10px 0;">
+        <b>Current Activity:</b> Integrating <b>Magnetic Encoders</b> to implement <b>proprioceptive feedback</b>. This allows the Brain to validate physical displacement against commanded movement for precise motor control.
+        <p style="margin-top: 8px;">
+          Integrating MT6701 and AS5600 encoders marks the shift to a <b>closed-loop system</b>. By coupling sensing magnets to motor shafts, the Brain receives real-time data to ensure physical movement matches digital intent.
+        </p>
+      </blockquote>
     </td>
   </tr>
 </table>
 
+---
 ---
 
 ## ⚡ Weekly Log
