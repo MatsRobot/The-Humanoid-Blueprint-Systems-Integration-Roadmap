@@ -53,6 +53,10 @@ This section serves as the dynamic bridge between high-level strategy and techni
 * 📂 <a href="https://github.com/MatsRobot/Digital-Nervous-System/blob/main/Experiments/Stage4-%20Adding%20Practical%20Nodes%20to%20CAN%20Bus/CAN_Bus_Arduino_Nano/CAN_Bus_Nano_Encoders_Display_bb.jpg" target="_blank">Technical Schematic: CAN_Bus_Nano_Encoders_Display</a>
 ---
 
+<img width="1380" height="752" alt="Image1" src="https://github.com/user-attachments/assets/b4c1fcd9-3fe6-45e9-8ae1-04eb9e18c6ae" />
+
+---
+
 ## 📋 Master Task Ledger
 
 Detailed trajectory of the project based on the master technical documentation.
