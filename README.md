@@ -13,7 +13,7 @@
         This hub connects high-level AI theory with ground-level hardware implementation. Every breakthrough—from <b>CAN Bus logic</b> to <b>micro-expressions</b>—is a component of a larger architectural puzzle.
       </p>
       <blockquote>
-        <b>Current Activities:</b> Integrating <b>Magnetic Encoders</b>. This phase focuses on providing accurate feedback for the Brain as how far the Robot has moved based on the received commands from the main processor.
+        <b>Current Activity:</b> Integrating <b>Magnetic Encoders</b>. This phase implements <b>proprioceptive feedback</b>, allowing the Brain to validate physical displacement against commanded movement for precise motor control.
       </blockquote>
     </td>
     <td width="35%" align="center" valign="top">
@@ -42,11 +42,11 @@
 
 ## ⚡ Weekly Log
 
-This section serves as the dynamic bridge between the high-level strategy and the 126-page Task Ledger.
+This section serves as the dynamic bridge between high-level strategy and technical execution.
 
 *   **Active Task:** `Magnetic Encoders MT6701 and AS5600`
-*   **Technical Challenge:** Physical connection between the Motor and the sensing magnets using 3D printed module **Position Encoders**.
-*   **Progress:** Integrating the two magnetic encoders  **page 122**.
+*   **Technical Challenge:** Engineering a reliable physical coupling between the DC motors and sensing magnets using a custom 3D-printed **Position Encoder Module**.
+*   **Progress:** Successfully integrated dual encoders with distinct I2C addresses to provide real-time angular feedback to the CAN Bus node.
 
 **Current Resources:**
 * 🔗 <a href="https://github.com/MatsRobot/Digital-Nervous-System/tree/main/Experiments/Stage4-%20Adding%20Practical%20Nodes%20to%20CAN%20Bus/CAN_Bus_Arduino_Nano" target="_blank">Repository Page: CAN_Bus_Arduino_Nano</a>
