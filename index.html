@@ -31,15 +31,20 @@
         }
 
         /* Hero Section Styling */
-        .hero-section { display: flex; gap: 2.5rem; margin-bottom: 1.5rem; align-items: flex-start; }
-        .hero-text { flex: 3; }
-        .image-sidebar { 
+        .hero-section { display: flex; gap: 2.5rem; margin-bottom: 1.5rem; align-items: center; }
+        .hero-text { flex: 2; }
+        .hero-image-container { 
             flex: 1.5; 
             border: 1px solid var(--gh-border);
             border-radius: 8px;
-            padding: 20px;
+            overflow: hidden;
             background: #fff;
             box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        .hero-image-container img {
+            width: 100%;
+            height: auto;
+            display: block;
         }
 
         .note { 
@@ -49,6 +54,21 @@
             margin: 1.5rem 0; 
             border-radius: 4px;
         }
+
+        /* Mission Status Dashboard Section */
+        .mission-dashboard {
+            margin: 2.5rem 0;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: var(--gh-bg-gray);
+            border: 1px solid var(--gh-border);
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 15px;
+            align-items: center;
+        }
+        .mission-dashboard h3 { background: none; margin: 0; padding: 0; width: 100%; text-align: center; margin-bottom: 10px; }
 
         /* Weekly Update Section */
         .weekly-activity-log {
@@ -115,25 +135,25 @@
         footer { margin-top: 4rem; padding: 2rem 0; border-top: 1px solid var(--gh-border); text-align: center; color: #6a737d; font-size: 0.9rem; }
 
         @media (max-width: 850px) {
-            .hero-section { flex-direction: column; }
+            .hero-section { flex-direction: column-reverse; }
             .toc-grid { grid-template-columns: 1fr; }
+            .mission-dashboard { flex-direction: column; align-items: flex-start; }
         }
     </style>
 </head>
 <body>
 
-    <!-- SECTION 1: STRATEGIC EXECUTION -->
+    <!-- SECTION 1: STRATEGIC EXECUTION & IMAGE -->
     <div class="hero-section">
         <div class="hero-text">
             <h1>🚀 The Humanoid Robot Blueprint:</h1>
-            <p><strong>Project Humanoid Robot</strong> is the central execution hub for the MatsRobot initiative. This architecture maps the transition from pages of technical theory into a functional, integrated humanoid system by bridging the "Missing Links" between isolated robotics modules.</p>
+            <p><strong>Project Humanoid Robot</strong> is the central execution hub for the MatsRobot initiative. This architecture maps the transition from technical theory into a functional system by bridging the "Missing Links".</p>
             
-		<!-- SECTION 1: Updated Note -->
-		<div class="note">
-			<strong>Current Activity:</strong> Integrating <strong>MT6701 and AS5600 Magnetic Encoders</strong>. 
-			<p></p>
-			This phase focuses on establishing <strong>closed-loop feedback</strong>. By providing precise data on physical displacement, the Brain can now verify if the robot has accurately executed movement commands sent by the main processor.
-		</div>
+            <div class="note">
+                <strong>Current Activity:</strong> Integrating <strong>MT6701 and AS5600 Magnetic Encoders</strong>. 
+                <p>Integrating Magnetic Encoders to implement proprioceptive feedback. This allows the Brain to validate physical displacement against commanded movement for precise motor control.
+Integrating MT6701 and AS5600 encoders marks the shift to a closed-loop system. By coupling sensing magnets to motor shafts, the Brain receives real-time data to ensure physical movement matches digital intent.</p>
+            </div>
 
             <a href="https://github.com/MatsRobot" class="btn-download">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.604-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12c0-5.523-4.477-10-10-10z"/></svg>
@@ -141,46 +161,38 @@
             </a>
         </div>
 
-        <div class="image-sidebar">
-            <h3>Mission Status</h3>
-            <div style="margin-top: 15px; font-size: 0.9rem;">
-                <p><span class="status-pill complete">Phase 1</span> Reflexes & Power</p>
-                <p><span class="status-pill current">Phase 2</span> Nervous System</p>
-                <p><span class="status-pill future">Phase 3</span> Cognitive Logic</p>
-                <p><span class="status-pill future">Phase 4</span> Full Integration</p>
-            </div>
-            <hr style="border: 0; border-top: 1px solid var(--gh-border); margin: 15px 0;">
-            <p style="font-size: 0.75rem; color: #6a737d;">Reference: Master Tech Specification Document</p>
+        <!-- Replaced Mission Status with image_a31d89.png -->
+        <div class="hero-image-container">
+            <img src="https://github.com/user-attachments/assets/b97be2ff-ea97-429b-aa82-4668e3df16dc" alt="image_a31d89.png">
         </div>
     </div>
 
-	<!-- SECTION 2: Updated Weekly Log -->
-	<div class="weekly-activity-log">
-		<h2>⚡ Weekly Log</h2>
-		<span class="status-pill current">Active Task</span>
-		<h3 style="display:inline; background:none; padding:0; margin:0;">Magnetic Encoder Integration (MT6701 & AS5600)</h3>
-		
-		<p style="margin-top: 1.5rem;">
-			Building on previous logic for reading angular rotation and transmitting data via the CAN Bus, this task addresses the <strong>physical hardware integration</strong>. We are developing the mechanical link between the Base Unit motors and the sensing magnets to ensure reliable data acquisition.
-		</p>
-		<p>
-			To bypass I2C address conflicts on the shared bus, we utilized two distinct encoders (MT6701 and AS5600). I designed and 3D-printed a custom housing that couples the dual DC motors directly to these encoders, ensuring high-precision tracking within the Base Unit assembly.
-		</p>        
-		
-		<div style="display: flex; gap: 12px; margin-top: 10px;">
-			<a href="https://github.com/MatsRobot/Digital-Nervous-System/tree/main/Experiments/Stage4-%20Adding%20Practical%20Nodes%20to%20CAN%20Bus/CAN_Bus_Arduino_Nano" 
-			   class="btn-link" 
-			   target="_blank" 
-			   rel="noopener noreferrer">
-			   🔗 Repository Page: CAN_Bus_Arduino_Nano
-			</a>
-			<a href="https://github.com/MatsRobot/Digital-Nervous-System/blob/main/Experiments/Stage4-%20Adding%20Practical%20Nodes%20to%20CAN%20Bus/CAN_Bus_Arduino_Nano/CAN_Bus_Nano_Encoders_Display_bb.jpg" 
-			   class="btn-link" 
-			   target="_blank" 
-			   rel="noopener noreferrer">
-			   📂 Technical Schematic: CAN_Bus_Nano_Encoders_Display
-			</a>
-		</div>
+    <!-- SECTION 2: Weekly Log -->
+    <div class="weekly-activity-log">
+        <h2>⚡ Weekly Log</h2>
+        <span class="status-pill current">Active Task</span>
+        <h3 style="display:inline; background:none; padding:0; margin:0;">Magnetic Encoder Integration (MT6701 & AS5600)</h3>
+        
+        <p style="margin-top: 1.5rem;">
+            Building on previous logic for transmitting data via CAN Bus, this task addresses <strong>physical hardware integration</strong>. We are developing the mechanical link between Base Unit motors and sensing magnets.
+        </p>
+        
+        <div style="display: flex; gap: 12px; margin-top: 10px;">
+            <a href="https://github.com/MatsRobot/Digital-Nervous-System/tree/main/Experiments/Stage4-%20Adding%20Practical%20Nodes%20to%20CAN%20Bus/CAN_Bus_Arduino_Nano" 
+               class="btn-link" target="_blank" rel="noopener noreferrer">🔗 Repository Page: CAN_Bus_Arduino_Nano</a>
+            <a href="https://github.com/MatsRobot/Digital-Nervous-System/blob/main/Experiments/Stage4-%20Adding%20Practical%20Nodes%20to%20CAN%20Bus/CAN_Bus_Arduino_Nano/CAN_Bus_Nano_Encoders_Display_bb.jpg" 
+               class="btn-link" target="_blank" rel="noopener noreferrer">📂 Technical Schematic: CAN_Bus_Nano_Encoders_Display</a>
+        </div>
+    </div>
+
+    <!-- NEW SECTION: MISSION STATUS DASHBOARD (Moved from side to top of ledger) -->
+    <div class="mission-dashboard">
+        <h3>Mission Status</h3>
+        <div><span class="status-pill complete">Phase 1</span> Reflexes & Power</div>
+        <div><span class="status-pill current">Phase 2</span> Nervous System</div>
+        <div><span class="status-pill future">Phase 3</span> Cognitive Logic</div>
+        <div><span class="status-pill future">Phase 4</span> Full Integration</div>
+        <p style="width: 100%; text-align: center; font-size: 0.75rem; color: #6a737d; margin-top: 10px;">Reference: Master Tech Specification Document</p>
     </div>
 
     <!-- SECTION 3: MASTER TASK LEDGER -->
