@@ -19,18 +19,10 @@
     <td width="35%" align="center" valign="top">
       <div style="border: 1px solid #eaecef; border-radius: 8px; padding: 15px; background: #fff;">
         <h3>Mission Status</h3>
-        <p align="left">
-          <img src="https://img.shields.io/badge/PHASE_1-COMPLETE-238636?style=for-the-badge" alt="Phase 1 Complete" /><br>
-          <small>Reflexes & Power</small>
-        </p>
-        <p align="left">
-          <img src="https://img.shields.io/badge/PHASE_2-CURRENT-d4a017?style=for-the-badge" alt="Phase 2 Current" /><br>
-          <small>Nervous System</small>
-        </p>
-        <p align="left">
-          <img src="https://img.shields.io/badge/PHASE_3-FUTURE-cf222e?style=for-the-badge" alt="Phase 3 Future" /><br>
-          <small>Cognitive Logic</small>
-        </p>
+        <img width="300" alt="Gemini_Generated_Image_v86lvsv86lvsv86l" src="https://github.com/user-attachments/assets/b97be2ff-ea97-429b-aa82-4668e3df16dc" />
+        <p align="left"> <img src="https://img.shields.io/badge/PHASE_1-COMPLETE-238636?style=for-the-badge" alt="Phase 1 Complete" /> </p>
+        <p align="left"> <img src="https://img.shields.io/badge/PHASE_2-CURRENT-d4a017?style=for-the-badge" alt="Phase 2 Current" /> </p>
+        <p align="left"> <img src="https://img.shields.io/badge/PHASE_3-FUTURE-cf222e?style=for-the-badge" alt="Phase 3 Future" />   </p>
         <hr>
         <p align="left"><small>Ref: Master Tech Specification Document</small></p>
       </div>
